@@ -1,6 +1,11 @@
+import Header from '../../components/Header'
+
 function Apropos(){
     return(
-        <h1>A propos: 👨‍👩‍👧‍👦</h1>
+        <div>
+            <Header />
+            <h1>A propos: 👨‍👩‍👧‍👦</h1>
+            </div>
     )
 }
 
