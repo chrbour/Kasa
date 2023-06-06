@@ -29,13 +29,13 @@ const StyledLink = styled(Link)`
         text-underline-offset: 5px;
     }
     @media(max-width: 767px){
-        height: 12px;
+        font-size: 12px;
     }
     @media(min-width: 768px) and (max-width: 991px){
-        height: 18px;
+        font-size: 18px;
     }
     @media(min-width: 992px){
-        height: 24px;
+        font-size: 24px;
     }`
 
 function Header(){
