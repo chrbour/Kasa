@@ -7,9 +7,19 @@ const StyledNav = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 40px 100px 0px;`
+    margin: 40px 100px 0px;
+    `
 
-const Logo = styled.img`height: 68px`
+const Logo = styled.img`
+    @media(max-width: 767px){
+        height: 48px;
+    }
+    @media(min-width: 768px) and (max-width: 991px){
+        height: 58px;
+    }
+    @media(min-width: 992px){
+        height: 68px;
+    }`
 
 const StyledLink = styled(Link)`
     color: #FF6060;
@@ -17,6 +27,15 @@ const StyledLink = styled(Link)`
     &:hover{
         text-decoration: underline;
         text-underline-offset: 5px;
+    }
+    @media(max-width: 767px){
+        height: 12px;
+    }
+    @media(min-width: 768px) and (max-width: 991px){
+        height: 18px;
+    }
+    @media(min-width: 992px){
+        height: 24px;
     }`
 
 function Header(){
