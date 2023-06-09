@@ -1,7 +1,7 @@
+import React from 'react'
 import logo from '../../assets/logoBlanc.png'
 import styled from 'styled-components'
-import {faCopyright} from '@fortawesome/free-regular-svg-icons'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 const Logo=styled.img`
     height: 40px;
@@ -28,7 +28,7 @@ function Footer(){
     return(
         <PiedPage className="PiedPage">
             <Logo src={logo} alt="Logo du site Kasa" />
-            <p><FontAwesomeIcon icon={faCopyright} /> 2020 Kasa. All rights reserved</p>
+            <p><i class="fa-regular fa-copyright"></i> 2020 Kasa. All rights reserved</p>
         </PiedPage>
     )
 }

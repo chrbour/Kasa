@@ -1,16 +1,16 @@
-import styled from 'styled-components'
+import React from 'react'
+import { styled } from 'styled-components'
 import image from '../../assets/kasa-Accueil.webp'
 
 const ImgContainer=styled.div`
   height: 223px;
-  background: #000000;
   overflow: hidden;
   border-radius: 25px;
   margin: 60px 100px 40px;
   position: relative;`
 
 const StyledImg=styled.img`
-  opacity: 70%;
+  filter: brightness(70%);
   width: 1720px;
   object-position: 0px -1210px;`
 
@@ -19,11 +19,19 @@ const Titre=styled.div`
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 48px;
     color: #FFFFFF;
-    transform: translate(-50%,-50%);`
+    transform: translate(-50%,-50%);
+    @media(max-width: 767px){
+      font-size: 24px;
+    }
+    @media(min-width: 768px) and (max-width: 991px){
+        font-size: 36px;
+    }
+    @media(min-width: 992px){
+        font-size: 48px;
+    }`
 
-function Banner(){
+function BannerAccueil(){
   return(
     <div>
       <ImgContainer>
@@ -34,4 +42,4 @@ function Banner(){
   )
 }
 
-export default Banner
+export default BannerAccueil
