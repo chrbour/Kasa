@@ -1,10 +1,9 @@
 import React from 'react'
 import Header from '../../components/Header'
-import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 
 
-const NumeroErreur=styled.h1`
+{/*const NumeroErreur=styled.h1`
     margin: 130px 0px 60px;
     font-weight: bold;
     @media(max-width: 767px){
@@ -48,19 +47,19 @@ const LienAccueil=styled(Link)`
    
 
 const CentrePage=styled.div`
-    text-align: center;`
+text-align: center;`*/}
 
-function Error(){
+function Erreur(){
     return(
         <div>
             <Header />
-            <CentrePage>
-                <NumeroErreur>404</NumeroErreur>
-                <TextErreur>Oups! La page que vous demandez n'existe pas.</TextErreur>
-                <LienAccueil to="/" >Retourner sur la page d'accueil</LienAccueil>
-            </CentrePage>
+            <div className="pageErreur">
+                <h1 className="numeroErreur">404</h1>
+                <h2 className="textErreur">Oups! La page que vous demandez n'existe pas.</h2>
+                <Link to="/" className="lienErreur" >Retourner sur la page d'accueil</Link>
+            </div>
         </div>
     )
 }
 
-export default Error
+export default Erreur

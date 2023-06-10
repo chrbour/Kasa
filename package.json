@@ -15,6 +15,7 @@
     "react-router": "^6.11.2",
     "react-router-dom": "^6.12.1",
     "react-scripts": "^2.1.3",
+    "sass": "^1.63.3",
     "styled-components": "^6.0.0-rc.3",
     "web-vitals": "^2.1.0"
   },
@@ -22,7 +23,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "sass": "sass --watch ./src/style/sass/main.scss:./src/style/style.css"
   },
   "eslintConfig": {
     "extends": [
