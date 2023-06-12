@@ -1,0 +1,48 @@
+.containerHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 100px 0px;
+    @media(max-width: 530px){
+        margin: 40px 50px 0px;
+    }
+}
+
+.logoHeader{
+    @media(max-width: 767px){
+        height: 48px;
+    }
+    @media(min-width: 768px) and (max-width: 991px){
+        height: 58px;
+    }
+    @media(min-width: 992px){
+        height: 68px;
+    }
+}
+
+.menuHeader{
+    @media(max-width: 430px){
+        display:flex;
+        height: 50px;
+        justify-content: space-between; 
+        text-align: center;
+        flex-direction: column;
+    }
+    @media(min-width: 431px){
+        .lienPageAccueil{
+            margin-right: 60px;
+        }
+    }
+}
+
+.lienPageAccueil, .lienPageApropos{
+    @media(max-width: 767px){
+        font-size: 12px;
+    }
+    @media(min-width: 768px) and (max-width: 991px){
+        font-size: 18px;
+    }
+    @media(min-width: 992px){
+        font-size: 24px;
+    }
+}
