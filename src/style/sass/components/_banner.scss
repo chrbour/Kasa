@@ -1,0 +1,36 @@
+.containerBanner{
+  height: 223px;
+  overflow: hidden;
+  border-radius: 25px;
+  margin: 60px 100px 40px;
+  position: relative;
+}
+.imageBanner{
+    filter: brightness(70%);
+    width: 1720px;
+}
+.accueilBanner{
+    object-position: 0px -1210px;
+}
+.aproposBanner{
+    object-position: 0px -500px;
+}
+
+.textBanner{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0px;
+    color: #FFFFFF;
+    transform: translate(-50%,-50%);
+    @media(max-width: 767px){
+      font-size: 24px;
+    }
+    @media(min-width: 768px) and (max-width: 991px){
+        font-size: 36px;
+    }
+    @media(min-width: 992px){
+        font-size: 48px;
+    }
+}

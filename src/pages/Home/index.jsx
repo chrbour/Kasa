@@ -9,7 +9,7 @@ function Home(){
   return(
     <div>
       <Header />
-      <Banner titre="Chez vous, partout et ailleurs" photo={image} description="Iles asiatiques"/>
+      <Banner titre="Chez vous, partout et ailleurs" photo={image} description="Iles asiatiques" classe="accueilBanner"/>
       <Card />
       <Footer />
     </div>
