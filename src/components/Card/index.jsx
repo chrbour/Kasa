@@ -1,9 +1,6 @@
 import React from 'react'
 import logement from '../../logements.json'
-import styled from 'styled-components'
-
-
-    
+   
 
 function Card(){
     return(
@@ -11,8 +8,9 @@ function Card(){
             <ul className="ensembleFichesCard" >
                 {logement.map((picture)=>
                 <li key={picture.id} className="ficheCard" >
-                    <img className="imageCard" src={picture.cover} alt={picture.description}/>  
                     <p className="titreCard">{picture.title}</p>
+                    <div className="degradeCard"></div>
+                    <img className="imageCard" src={picture.cover} alt={picture.description}/>  
                 </li>
                 )
                 }       

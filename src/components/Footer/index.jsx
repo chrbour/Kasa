@@ -1,6 +1,5 @@
 import React from 'react'
 import logo from '../../assets/logoBlanc.png'
-import styled from 'styled-components'
 
 
 function Footer(){
