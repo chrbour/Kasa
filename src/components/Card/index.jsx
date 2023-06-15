@@ -1,5 +1,6 @@
 import React from 'react'
 import logement from '../../logements.json'
+import {Link} from 'react-router-dom'
    
 
 function Card(){
@@ -7,11 +8,13 @@ function Card(){
         <div className="containerCard">
             <ul className="ensembleFichesCard" >
                 {logement.map((picture)=>
-                <li key={picture.id} className="ficheCard" >
-                    <p className="titreCard">{picture.title}</p>
-                    <div className="degradeCard"></div>
-                    <img className="imageCard" src={picture.cover} alt={picture.description}/>  
-                </li>
+                <Link to={`logement/${picture.id}`} className="lienCard">
+                    <li key={picture.id} className="ficheCard" >
+                        <p className="titreCard">{picture.title}</p>
+                        <div className="degradeCard"></div>
+                        <img className="imageCard" src={picture.cover} alt={picture.description}/>  
+                    </li>
+                </Link>
                 )
                 }       
             </ul>
