@@ -13,6 +13,10 @@ a:hover {
   text-underline-offset: 5px;
 }
 
+p {
+  margin: 0px;
+}
+
 .containerHeader {
   display: flex;
   justify-content: space-between;
@@ -123,7 +127,11 @@ a:hover {
   margin: 30px 100px;
   background-color: rgb(112, 206, 234);
   height: 415px;
+  overflow: hidden;
   border-radius: 25px;
+}
+.containerLogement img {
+  width: 100%;
 }
 
 .containerCollapse {
@@ -296,6 +304,107 @@ a:hover {
   .lienErreur {
     font-size: 18px;
   }
+}
+
+.pageLogement {
+  display: flex;
+  flex-direction: column;
+  margin: 0 100px 30px;
+}
+
+.presentationLogement {
+  display: flex;
+  justify-content: space-between;
+}
+.presentationLogement h1 {
+  margin: 0px;
+  font-size: 36px;
+}
+.presentationLogement p {
+  font-size: 18px;
+}
+
+.hoteLogement {
+  display: flex;
+}
+
+.containerImageHoteLogement {
+  border-radius: 50%;
+  height: 64px;
+  width: 64px;
+  overflow: hidden;
+}
+
+.imageHoteLogement {
+  height: 100%;
+}
+
+.identiteLogement {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 0 10px 0 0;
+  font-size: 18px;
+}
+
+.containerTagsEtAppreciationLogemment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.tagsLogement span {
+  color: #FFFFFF;
+  background-color: #FF6060;
+  margin: 0 10px 0 0;
+  border-radius: 10px;
+  padding: 0 40px;
+}
+
+.etoileLogement {
+  color: #E3E3E3;
+  margin: 0px 0px 0px 10px;
+}
+
+.etoileLogementColoree {
+  margin: 0px 0px 0px 10px;
+}
+
+.containerDetailLogement {
+  display: flex;
+  justify-content: space-between;
+}
+
+.containerCollapseLogement {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.titreCollapseLogement {
+  width: 100%;
+  height: 47px;
+  border-radius: 5px;
+  background-color: #FF6060;
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 0 20px;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.descriptionCollapseLogement {
+  width: 100%;
+  background-color: #F6F6F6;
+  margin: 0;
+  border-radius: 5px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=style.css.map */

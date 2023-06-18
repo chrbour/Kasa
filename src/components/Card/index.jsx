@@ -7,14 +7,14 @@ function Card(){
     return(
         <div className="containerCard">
             <ul className="ensembleFichesCard" >
-                {logement.map((picture)=>
-                <Link to={`logement/${picture.id}`} className="lienCard">
-                    <li key={picture.id} className="ficheCard" >
-                        <p className="titreCard">{picture.title}</p>
-                        <div className="degradeCard"></div>
-                        <img className="imageCard" src={picture.cover} alt={picture.description}/>  
-                    </li>
-                </Link>
+                {logement.map((image)=>
+                    <Link to={`logement/${image.id}`} className="lienCard">
+                        <li key={image.id} className="ficheCard" >
+                            <p className="titreCard">{image.title}</p>
+                            <div className="degradeCard"></div>
+                            <img className="imageCard" src={image.cover} alt={image.description}/>  
+                        </li>
+                    </Link>
                 )
                 }       
             </ul>

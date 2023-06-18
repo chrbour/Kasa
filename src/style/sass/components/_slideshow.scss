@@ -1,6 +1,11 @@
 .containerLogement{
     margin: 30px 100px;
     background-color: rgb(112, 206, 234);
-    height: 415px;
+    height: 415px;overflow: hidden;
     border-radius: 25px;
+    & img{ 
+        width: 100%;
+       
+       
+    }
 }
