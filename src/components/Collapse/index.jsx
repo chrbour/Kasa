@@ -13,7 +13,7 @@ function Collapse({valeur, description, page}){
             <p className={"titreCollapse" + classe} onClick={() => affichageDescription()}>
                 {valeur}{isOpened? <i class="fa-solid fa-chevron-up"></i> : <i class="fa-solid fa-chevron-down"></i>}
             </p>
-            {isOpened? <p className={"descriptionCollapse" + classe}>{description}</p> : null}
+            {isOpened? <p className={"descriptionCollapse" + classe} onClick={() => affichageDescription()}>{description}</p> : null}
         </div>
     )
 }

@@ -5,6 +5,8 @@ import Slideshow from '../../components/Slideshow'
 import Collapse from '../../components/Collapse'
 import Footer from '../../components/Footer'
 import logement from '../../logements.json'
+import {Navigate} from 'react-router-dom'
+
 
 function FicheLogement(){
     let recupId = useParams();
@@ -12,7 +14,10 @@ function FicheLogement(){
         return(
              element.id === recupId.id
         )
-    })
+    }) 
+    if (chambre === undefined){
+       return(<Navigate to="/Erreur"/>)
+    }
     const equipements = chambre.equipments.map((element) => <p>{element}</p>)
     const etoiles = []; 
     let classe="";

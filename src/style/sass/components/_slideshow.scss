@@ -1,11 +1,47 @@
-.containerLogement{
+.containerPhotos{
     margin: 30px 100px;
-    background-color: rgb(112, 206, 234);
-    height: 415px;overflow: hidden;
+    height: 415px;
+    position: relative;
+    overflow: hidden;
+    background-color:grey;
     border-radius: 25px;
     & img{ 
-        width: 100%;
-       
-       
+        width :100%;
+        position: absolute;
+        bottom: -35px;
     }
+}
+.containerChevrons{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.chevronGauche {
+    z-index: 1;
+   font-size:60px;
+    color: #FFFFFF;
+    & :hover{
+        cursor: pointer;
+    }
+}
+.chevronDroit{
+    z-index: 1;
+    font-size: 60px;
+    color: #FFFFFF;
+    & :hover{
+        cursor: pointer;
+    }
+}
+.paginationPhotos{
+    z-index: 1;
+    position: absolute;
+    font-size: 18px;
+    bottom: 20px;
+    left: 50%;
+    color: #FFFFFF;
 }
