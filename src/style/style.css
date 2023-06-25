@@ -90,11 +90,15 @@ p {
 }
 
 .accueilBanner {
-  object-position: 0px -1210px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .aproposBanner {
-  object-position: 0px -500px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .textBanner {
@@ -132,9 +136,9 @@ p {
   border-radius: 25px;
 }
 .containerPhotos img {
+  object-fit: cover;
   width: 100%;
-  position: absolute;
-  bottom: -35px;
+  height: 100%;
 }
 
 .containerChevrons {
