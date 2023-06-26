@@ -11,8 +11,8 @@ function Card(){
                     <Link to={`logement/${image.id}`} className="lienCard">
                         <li key={image.id} className="ficheCard" >
                             <p className="titreCard">{image.title}</p>
-                            <div className="degradeCard"></div>
-                            <img className="imageCard" src={image.cover} alt={image.description}/>  
+                            <div className="degradeCard"></div> 
+                            <img className="imageCard" src={image.cover} alt={image.description}/> 
                         </li>
                     </Link>
                 )

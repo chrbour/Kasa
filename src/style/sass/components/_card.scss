@@ -24,24 +24,26 @@
     justify-content:center;
     position: relative;
     margin: 25px;
-}
-.lienCard {
-   
-}
-.imageCard{
-    height: 100%;
-    transform: scale(1);
-    & :hover{ transition: transform 5s;
-        transform: scale(1.05);
+    & .degradeCard:hover + .imageCard {
+        transform: scale(1.2);
     }
 }
+.imageCard{
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .degradeCard{
-    position: absolute;height: 340px; width: 340px;
+    z-index:1;
+    position: absolute;
+    height: 340px; 
+    width: 340px;
     background : linear-gradient(rgba(255,255,255, 0),rgba(0,0,0, 0.4));
-
 }
 .titreCard{
-    z-index: 1;
+    z-index: 2;
     position: absolute;left: 0px;
     color: #FFFFFF;
     font-size: 18px;
