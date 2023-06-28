@@ -21,11 +21,20 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 40px 100px 0px;
 }
-@media (max-width: 530px) {
+@media (max-width: 767px) {
   .containerHeader {
-    margin: 40px 50px 0px;
+    margin: 20px 20px 0px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .containerHeader {
+    margin: 30px 60px 0px;
+  }
+}
+@media (min-width: 992px) {
+  .containerHeader {
+    margin: 40px 100px 0px;
   }
 }
 
@@ -80,13 +89,26 @@ p {
   height: 223px;
   overflow: hidden;
   border-radius: 25px;
-  margin: 60px 100px 40px;
   position: relative;
+}
+@media (max-width: 767px) {
+  .containerBanner {
+    margin: 20px 20px 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .containerBanner {
+    margin: 30px 60px 25px;
+  }
+}
+@media (min-width: 992px) {
+  .containerBanner {
+    margin: 40px 100px 30px;
+  }
 }
 
 .imageBanner {
   filter: brightness(70%);
-  width: 1720px;
 }
 
 .accueilBanner {
@@ -200,24 +222,55 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 35px 0px;
+}
+@media (max-width: 767px) {
+  .containerCollapse {
+    margin: 35px 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .containerCollapse {
+    margin: 35px 60px;
+  }
+}
+@media (min-width: 992px) {
+  .containerCollapse {
+    margin: 35px 100px;
+  }
 }
 .containerCollapse :hover {
   cursor: pointer;
 }
 
 .titreCollapse {
-  width: 53%;
-  height: 47px;
+  width: 100%;
+  box-sizing: border-box;
   border-radius: 5px;
   background-color: #FF6060;
   color: #FFFFFF;
-  font-size: 20px;
   padding: 0 20px;
   margin: 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .titreCollapse {
+    font-size: 13px;
+    height: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .titreCollapse {
+    font-size: 18px;
+    height: 38px;
+  }
+}
+@media (min-width: 992px) {
+  .titreCollapse {
+    font-size: 24px;
+    height: 47px;
+  }
 }
 
 .containerDescriptionCollapse {
@@ -228,11 +281,26 @@ p {
 }
 
 .descriptionCollapse {
-  width: 53%;
+  width: 100%;
   background-color: #F6F6F6;
   margin: 0;
   border-radius: 5px;
   padding: 20px;
+}
+@media (max-width: 767px) {
+  .descriptionCollapse {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .descriptionCollapse {
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px) {
+  .descriptionCollapse {
+    font-size: 24px;
+  }
 }
 
 .collapseOuvert {
@@ -397,7 +465,21 @@ p {
 .pageLogement {
   display: flex;
   flex-direction: column;
-  margin: 0 100px 30px;
+}
+@media (max-width: 767px) {
+  .pageLogement {
+    margin: 0 20px 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .pageLogement {
+    margin: 0 60px 30px;
+  }
+}
+@media (min-width: 992px) {
+  .pageLogement {
+    margin: 0 100px 30px;
+  }
 }
 
 .presentationLogement {
