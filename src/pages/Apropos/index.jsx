@@ -10,7 +10,7 @@ function Apropos(){
     return(
         <div>
             <Header />
-            <Banner titre="" photo={image} description="Rivière entre des montagnes enneigées" classe="aproposBanner" page="apropos"/>
+            <Banner titre="" photo={image} description="Rivière entre des montagnes enneigées" classe="aproposBanner" />
             <Collapse valeur='Fiabilité' description='Les annonces postées sur Kasa grantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.' page="apropos" />
             <Collapse valeur='Respect' description='La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.' page="apropos"/>
             <Collapse valeur='Service' description="Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question." page="apropos"/>

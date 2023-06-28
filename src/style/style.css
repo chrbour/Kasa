@@ -179,6 +179,23 @@ p {
   color: #FFFFFF;
 }
 
+@keyframes ouverture {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+@keyframes fermeture {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-100%);
+    margin-top: -140px;
+  }
+}
 .containerCollapse {
   display: flex;
   flex-direction: column;
@@ -203,12 +220,27 @@ p {
   justify-content: space-between;
 }
 
+.containerDescriptionCollapse {
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
 .descriptionCollapse {
   width: 53%;
   background-color: #F6F6F6;
   margin: 0;
   border-radius: 5px;
   padding: 20px;
+}
+
+.collapseOuvert {
+  animation: ouverture 1s;
+}
+
+.collapseFerme {
+  animation: fermeture 1s forwards;
 }
 
 .containerCard {
