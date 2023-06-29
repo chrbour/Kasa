@@ -230,12 +230,12 @@ p {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .containerCollapse {
-    margin: 35px 60px;
+    margin: 35px 160px;
   }
 }
 @media (min-width: 992px) {
   .containerCollapse {
-    margin: 35px 100px;
+    margin: 35px 300px;
   }
 }
 .containerCollapse :hover {
@@ -312,7 +312,6 @@ p {
 }
 
 .containerCard {
-  margin: 45px 100px;
   padding: 25px;
   background-color: #F6F6F6;
   border-radius: 25px;
@@ -320,7 +319,24 @@ p {
 @media (max-width: 767px) {
   .containerCard {
     background-color: #FFFFFF;
-    margin: 45px 0px;
+    margin: 45px 20px;
+    padding: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .containerCard {
+    margin: 45px 60px;
+  }
+}
+@media (min-width: 992px) {
+  .containerCard {
+    margin: 45px 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .lienCard {
+    margin: -20px -20px 50px;
   }
 }
 
@@ -333,8 +349,6 @@ p {
 }
 
 .ficheCard {
-  height: 340px;
-  width: 340px;
   border-radius: 10px;
   display: flex;
   overflow: hidden;
@@ -342,6 +356,24 @@ p {
   justify-content: center;
   position: relative;
   margin: 25px;
+}
+@media (max-width: 767px) {
+  .ficheCard {
+    height: 100%;
+    width: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .ficheCard {
+    height: 400px;
+    width: 400px;
+  }
+}
+@media (min-width: 992px) {
+  .ficheCard {
+    height: 340px;
+    width: 340px;
+  }
 }
 .ficheCard .degradeCard:hover + .imageCard {
   transform: scale(1.2);
@@ -358,8 +390,8 @@ p {
 .degradeCard {
   z-index: 1;
   position: absolute;
-  height: 340px;
-  width: 340px;
+  height: 100%;
+  width: 100%;
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.4));
 }
 
