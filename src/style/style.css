@@ -150,12 +150,28 @@ p {
 }
 
 .containerPhotos {
-  margin: 30px 100px;
-  height: 415px;
   position: relative;
   overflow: hidden;
   background-color: grey;
   border-radius: 25px;
+}
+@media (max-width: 767px) {
+  .containerPhotos {
+    margin: 30px 20px;
+    height: 255px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .containerPhotos {
+    margin: 30px 60px;
+    height: 335px;
+  }
+}
+@media (min-width: 992px) {
+  .containerPhotos {
+    margin: 30px 100px;
+    height: 415px;
+  }
 }
 .containerPhotos img {
   object-fit: cover;
@@ -176,8 +192,22 @@ p {
 
 .chevronGauche {
   z-index: 1;
-  font-size: 60px;
   color: #FFFFFF;
+}
+@media (max-width: 767px) {
+  .chevronGauche {
+    font-size: 24px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .chevronGauche {
+    font-size: 42px;
+  }
+}
+@media (min-width: 992px) {
+  .chevronGauche {
+    font-size: 60px;
+  }
 }
 .chevronGauche :hover {
   cursor: pointer;
@@ -188,6 +218,21 @@ p {
   font-size: 60px;
   color: #FFFFFF;
 }
+@media (max-width: 767px) {
+  .chevronDroit {
+    font-size: 24px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .chevronDroit {
+    font-size: 42px;
+  }
+}
+@media (min-width: 992px) {
+  .chevronDroit {
+    font-size: 60px;
+  }
+}
 .chevronDroit :hover {
   cursor: pointer;
 }
@@ -195,10 +240,24 @@ p {
 .paginationPhotos {
   z-index: 1;
   position: absolute;
-  font-size: 18px;
   bottom: 20px;
   left: 50%;
   color: #FFFFFF;
+}
+@media (max-width: 767px) {
+  .paginationPhotos {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .paginationPhotos {
+    font-size: 15px;
+  }
+}
+@media (min-width: 992px) {
+  .paginationPhotos {
+    font-size: 18px;
+  }
 }
 
 @keyframes ouverture {
@@ -514,47 +573,57 @@ p {
   }
 }
 
+.containerDescriptionLogement {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .containerDescriptionLogement {
+    flex-direction: column;
+  }
+}
+
 .presentationLogement {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 .presentationLogement h1 {
-  margin: 0px;
-  font-size: 36px;
+  margin: 0 0 5px;
 }
-.presentationLogement p {
-  font-size: 18px;
+@media (max-width: 767px) {
+  .presentationLogement h1 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .presentationLogement h1 {
+    font-size: 27px;
+  }
+}
+@media (min-width: 992px) {
+  .presentationLogement h1 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 767px) {
+  .presentationLogement p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .presentationLogement p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 992px) {
+  .presentationLogement p {
+    font-size: 18px;
+  }
 }
 
-.hoteLogement {
-  display: flex;
-}
-
-.containerImageHoteLogement {
-  border-radius: 50%;
-  height: 64px;
-  width: 64px;
-  overflow: hidden;
-}
-
-.imageHoteLogement {
-  height: 100%;
-}
-
-.identiteLogement {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  margin: 0 10px 0 0;
-  font-size: 18px;
-}
-
-.containerTagsEtAppreciationLogemment {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px 0px;
+.situationLogement {
+  margin-bottom: 20px;
 }
 
 .tagsLogement span {
@@ -563,6 +632,88 @@ p {
   margin: 0 10px 0 0;
   border-radius: 10px;
   padding: 0 40px;
+}
+@media (max-width: 767px) {
+  .tagsLogement span {
+    font-size: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .tagsLogement span {
+    font-size: 12px;
+  }
+}
+@media (min-width: 992px) {
+  .tagsLogement span {
+    font-size: 14px;
+  }
+}
+
+.containerEvaluationLogement {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+@media (max-width: 767px) {
+  .containerEvaluationLogement {
+    flex-direction: row-reverse;
+  }
+}
+
+.hoteLogement {
+  display: flex;
+}
+
+.identiteLogement {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 0 10px 0 0;
+}
+@media (max-width: 767px) {
+  .identiteLogement {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .identiteLogement {
+    font-size: 15px;
+  }
+}
+@media (min-width: 992px) {
+  .identiteLogement {
+    font-size: 18px;
+  }
+}
+
+.containerImageHoteLogement {
+  border-radius: 50%;
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .containerImageHoteLogement {
+    height: 32px;
+    width: 32px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .containerImageHoteLogement {
+    height: 48px;
+    width: 48px;
+  }
+}
+@media (min-width: 992px) {
+  .containerImageHoteLogement {
+    height: 64px;
+    width: 64px;
+  }
+}
+
+.imageHoteLogement {
+  height: 100%;
 }
 
 .etoileLogement {
@@ -578,11 +729,21 @@ p {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 767px) {
+  .containerDetailLogement {
+    flex-direction: column;
+  }
+}
 
 .containerCollapseLogement {
   display: flex;
   flex-direction: column;
   width: 45%;
+}
+@media (max-width: 767px) {
+  .containerCollapseLogement {
+    width: 100%;
+  }
 }
 .containerCollapseLogement :hover {
   cursor: pointer;
@@ -602,6 +763,25 @@ p {
   justify-content: space-between;
   box-sizing: border-box;
 }
+@media (max-width: 767px) {
+  .titreCollapseLogement {
+    font-size: 13px;
+    height: 30px;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .titreCollapseLogement {
+    font-size: 18px;
+    height: 38px;
+  }
+}
+@media (min-width: 992px) {
+  .titreCollapseLogement {
+    font-size: 24px;
+    height: 47px;
+  }
+}
 
 .descriptionCollapseLogement {
   width: 100%;
@@ -610,6 +790,21 @@ p {
   border-radius: 5px;
   padding: 20px;
   box-sizing: border-box;
+}
+@media (max-width: 767px) {
+  .descriptionCollapseLogement {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .descriptionCollapseLogement {
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px) {
+  .descriptionCollapseLogement {
+    font-size: 24px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,51 +3,51 @@
     flex-direction: column;
     @media(max-width: 767px){
         margin: 0 20px 30px;
-      }
-      @media(min-width: 768px) and (max-width: 991px){
-        margin: 0 60px 30px;
-      }
-      @media(min-width: 992px){
-          margin: 0 100px 30px;
-      }
-    
+    }
+    @media(min-width: 768px) and (max-width: 991px){
+    margin: 0 60px 30px;
+    }
+    @media(min-width: 992px){
+        margin: 0 100px 30px;
+    }
+}
+.containerDescriptionLogement{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    @media(max-width:767px){
+        flex-direction: column;
+    }
 }
 .presentationLogement{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     & h1{
-        margin: 0px;
-        font-size: 36px;
+        margin: 0 0 5px;
+        @media(max-width: 767px){
+            font-size: 18px;
+        }
+        @media(min-width: 768px) and (max-width: 991px){
+            font-size: 27px;
+        }
+        @media(min-width: 992px){
+            font-size: 36px;
+        }
     }
     & p{
-        font-size: 18px;
+        @media(max-width: 767px){
+            font-size: 14px;
+        }
+        @media(min-width: 768px) and (max-width: 991px){
+            font-size: 16px;
+        }
+        @media(min-width: 992px){
+            font-size: 18px;
+        }
     }
 }
-.hoteLogement{
-    display:flex;
-}
-.containerImageHoteLogement{
-    border-radius: 50%;
-    height: 64px;
-    width: 64px;
-    overflow: hidden;
-}
-.imageHoteLogement{
-    height: 100%;
-}
-.identiteLogement{
-    display:flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    margin: 0 10px 0 0;
-    font-size: 18px;
-}
-.containerTagsEtAppreciationLogemment{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 0px;
+.situationLogement{
+    margin-bottom: 20px;
 }
 .tagsLogement span{
     color: #FFFFFF;
@@ -55,6 +55,63 @@
     margin: 0 10px 0 0;
     border-radius: 10px;
     padding: 0 40px;
+    @media(max-width: 767px){
+        font-size: 10px;
+    }
+    @media(min-width: 768px) and (max-width: 991px){
+        font-size: 12px;
+    }
+    @media(min-width: 992px){
+        font-size: 14px;
+    }
+}
+.containerEvaluationLogement{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    @media(max-width:767px){
+        flex-direction: row-reverse;;
+    }
+}
+.hoteLogement{
+    display:flex;
+}
+.identiteLogement{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0 10px 0 0;
+    @media(max-width: 767px){
+        font-size: 12px;
+    }
+    @media(min-width: 768px) and (max-width: 991px){
+        font-size: 15px;
+    }
+    @media(min-width: 992px){
+        font-size: 18px;
+    }
+}
+.containerImageHoteLogement{
+    border-radius: 50%;
+    overflow: hidden;
+    @media(max-width: 767px){
+        height: 32px;
+        width: 32px;
+    }
+    @media(min-width: 768px) and (max-width: 991px){
+        height: 48px;
+        width: 48px;
+    }
+    @media(min-width: 992px){
+        height: 64px;
+        width: 64px;
+    }
+}
+.imageHoteLogement{
+    height: 100%;
 }
 .etoileLogement{
     color: #E3E3E3;
@@ -66,11 +123,17 @@
 .containerDetailLogement {
     display: flex;
     justify-content: space-between;
+    @media(max-width: 767px){
+        flex-direction: column;
+    }
 }
 .containerCollapseLogement{
     display: flex;
     flex-direction :column;
     width: 45%; 
+    @media(max-width: 767px){
+        width: 100%;
+    }
     & :hover{
         cursor: pointer;
     }
@@ -88,6 +151,19 @@
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
+    @media(max-width: 767px){
+        font-size: 13px;
+        height: 30px;
+        margin-top: 20px;
+    }
+    @media(min-width: 768px) and (max-width: 991px){
+        font-size: 18px;
+        height: 38px;
+    }
+    @media(min-width: 992px){
+        font-size: 24px;
+        height: 47px;
+    }
 }
 
 .descriptionCollapseLogement{
@@ -97,6 +173,15 @@
     border-radius: 5px;
     padding: 20px;
     box-sizing: border-box;
+    @media(max-width: 767px){
+        font-size: 12px;
+    }
+    @media(min-width: 768px) and (max-width: 991px){
+        font-size: 18px;
+    }
+    @media(min-width: 992px){
+        font-size: 24px;
+    }
 }
 
 

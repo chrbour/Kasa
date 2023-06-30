@@ -33,33 +33,35 @@ function FicheLogement(){
             <Header />
             <Slideshow images={chambre.pictures}/>
             <div className="pageLogement">
-                <div className="presentationLogement">
-                    <div className = "situationLogement">
-                        <h1>{chambre.title}</h1>
-                        <p>{chambre.location}</p>
-                    </div>       
-                    <div className = "hoteLogement">
-                        <div className='identiteLogement'>
-                            <p>{prenom}</p>
-                            <p>{nom}</p>
-                        </div>
-                        <div className="containerImageHoteLogement">
-                            <img className="imageHoteLogement" src={chambre.host.picture} alt={chambre.host} />
+                <div className="containerDescriptionLogement">
+                    <div className="presentationLogement">
+                        <div className = "situationLogement">
+                            <h1>{chambre.title}</h1>
+                            <p>{chambre.location}</p>
+                        </div>       
+                        <div className ="tagsLogement">
+                            {chambre.tags.map((element) => <span>{element}</span>)}
                         </div>
                     </div>
-                </div>
-                    <div className = "containerTagsEtAppreciationLogemment">
-                        <div className =" tagsLogement">
-                            {chambre.tags.map((element) => <span>{element}</span>)}
+                    <div className = "containerEvaluationLogement">
+                        <div className = "hoteLogement">
+                            <div className='identiteLogement'>
+                                <p>{prenom}</p>
+                                <p>{nom}</p>
+                            </div>
+                            <div className="containerImageHoteLogement">
+                                <img className="imageHoteLogement" src={chambre.host.picture} alt={chambre.host} />
+                            </div>
                         </div>
                         <div className = "etoilesLogement">
                             {etoiles}
                         </div>
                     </div>
-                    <div className="containerDetailLogement">
-                            <Collapse valeur="Description" description={chambre.description} page="logement"/>
-                            <Collapse valeur="Equipements" description={equipements} page="logement" />
-                    </div>
+                </div>    
+                <div className="containerDetailLogement">
+                        <Collapse valeur="Description" description={chambre.description} page="logement"/>
+                        <Collapse valeur="Equipements" description={equipements} page="logement" />
+                </div>
             </div>
             <Footer />
         </div>
