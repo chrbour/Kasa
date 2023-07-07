@@ -8,7 +8,7 @@ import logement from '../../logements.json'
 import {Navigate} from 'react-router-dom'
 
 
-function FicheLogement(){
+function Logement(){
     let recupId = useParams();
     const chambre = logement.find((element) => {
         return(
@@ -22,7 +22,7 @@ function FicheLogement(){
     const etoiles = []; 
     let classe="";
     for (let i=0; i<5; i++){
-        {i<chambre.rating? classe="Coloree" : classe=""}
+        i<chambre.rating? classe="Coloree" : classe=""
         etoiles.push(<span className={'etoileLogement'+classe}><i class="fa-solid fa-star"></i></span>)
     }
     const identite=chambre.host.name.split(' ');
@@ -68,4 +68,4 @@ function FicheLogement(){
     )
 }
 
-export default FicheLogement
+export default Logement

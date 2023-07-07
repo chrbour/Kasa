@@ -149,6 +149,14 @@ p {
   }
 }
 
+@keyframes slideGauche {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
 .containerPhotos {
   position: relative;
   overflow: hidden;
@@ -654,7 +662,6 @@ p {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
 }
 @media (max-width: 767px) {
   .containerEvaluationLogement {
@@ -720,9 +727,39 @@ p {
   color: #E3E3E3;
   margin: 0px 0px 0px 10px;
 }
+@media (max-width: 767px) {
+  .etoileLogement {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .etoileLogement {
+    font-size: 19px;
+  }
+}
+@media (min-width: 992px) {
+  .etoileLogement {
+    font-size: 22px;
+  }
+}
 
 .etoileLogementColoree {
-  margin: 0px 0px 0px 10px;
+  margin: 10px 0px 0px 10px;
+}
+@media (max-width: 767px) {
+  .etoileLogementColoree {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .etoileLogementColoree {
+    font-size: 19px;
+  }
+}
+@media (min-width: 992px) {
+  .etoileLogementColoree {
+    font-size: 22px;
+  }
 }
 
 .containerDetailLogement {

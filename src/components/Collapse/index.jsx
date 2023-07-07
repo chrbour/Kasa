@@ -1,5 +1,5 @@
 import React from 'react'
-import {useState} from 'react'
+import {useState, Fragment} from 'react'
 
 let classe="";
 function Collapse({valeur, description, page}){
@@ -13,10 +13,10 @@ function Collapse({valeur, description, page}){
     return(
         <div className={"containerCollapse" + classe} >
             <p className={"titreCollapse" + classe} onClick={() => affichageDescription()}>
-                {valeur}{isOpened? <i class="fa-solid fa-chevron-up"></i> : <i class="fa-solid fa-chevron-down"></i>}
+                {valeur}{isOpened? <i className="fa-solid fa-chevron-up"></i> : <i className="fa-solid fa-chevron-down"></i>}
             </p>
             {isPageChargee?
-                <React.Fragment>
+                <Fragment>
                     {isOpened? 
                         <span className="containerDescriptionCollapse">
                             <p className={"descriptionCollapse" + classe + " collapseOuvert"} onClick={() => 
@@ -25,9 +25,8 @@ function Collapse({valeur, description, page}){
                             <p className={"descriptionCollapse" + classe + " collapseFerme"}>{description}</p>
                             </span>
                     }
-                </React.Fragment> : null
+                </Fragment> : null
             }
-
         </div>
     )
 }

@@ -70,7 +70,6 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
     @media(max-width:767px){
         flex-direction: row-reverse;;
     }
@@ -116,9 +115,27 @@
 .etoileLogement{
     color: #E3E3E3;
     margin: 0px 0px 0px 10px;
+    @media(max-width: 767px){
+        font-size: 16px;
+    }
+    @media(min-width: 768px) and (max-width: 991px){
+        font-size: 19px;
+    }
+    @media(min-width: 992px){
+        font-size: 22px;
+    }
 }
 .etoileLogementColoree{
-    margin: 0px 0px 0px 10px;
+    margin: 10px 0px 0px 10px;
+    @media(max-width: 767px){
+        font-size: 16px;
+    }
+    @media(min-width: 768px) and (max-width: 991px){
+        font-size: 19px;
+    }
+    @media(min-width: 992px){
+        font-size: 22px;
+    }
 }
 .containerDetailLogement {
     display: flex;
