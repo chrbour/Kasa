@@ -7,7 +7,7 @@ function Card() {
 		<div className='containerCard'>
 			<ul className='ensembleFichesCard'>
 				{logement.map((image) => (
-					<Link to={`logement/${image.id}`} key={image.id} className='lienCard'>
+					<Link to={`Kasa/logement/${image.id}`} key={image.id} className='lienCard'>
 						<li className='ficheCard'>
 							<p className='titreCard'>{image.title}</p>
 							<div className='degradeCard'></div>

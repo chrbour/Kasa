@@ -10,8 +10,8 @@ function Routeur() {
 		<Router>
 			<Routes>
 				<Route path='/Kasa/' element={<Home />} />
-				<Route path='/logement/:id' element={<Logement />} />
-				<Route path='/apropos/' element={<Apropos />} />
+				<Route path='/Kasa/logement/:id' element={<Logement />} />
+				<Route path='/Kasa/apropos/' element={<Apropos />} />
 				<Route path='*' element={<Erreur />} />
 			</Routes>
 		</Router>
