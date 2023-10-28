@@ -11,7 +11,7 @@ function Erreur(){
             <div className="pageErreur">
                 <h1 className="numeroErreur">404</h1>
                 <h2 className="textErreur">Oups! La page que vous demandez n'existe pas.</h2>
-                <Link to="/" className="lienErreur" >Retourner sur la page d'accueil</Link>
+                <Link to="/Kasa/" className="lienErreur" >Retourner sur la page d'accueil</Link>
             </div>
         </div>
     )
