@@ -1,3 +1,35 @@
+# Kasa
+![P7_Presentation](https://github.com/chrbour/Kasa/assets/108238838/eb00ae63-55e0-4bce-8575-eabc9b6f038a)
+---
+![P7_Rental](https://github.com/chrbour/Kasa/assets/108238838/2597c0d4-60f3-4eb6-a1b5-445c014d62a4)
+---
+![P7_A_Propos](https://github.com/chrbour/Kasa/assets/108238838/85e77b4d-d955-45d2-81c0-adfd4af37a44)
+
+# Objectif 
+Ce projet 7 de la formation Développeur web d'OpenClassrooms consistait à créer une application web de location immobilière avec React.
+
+# Langages utilisés
+**HTML, CSS, JvaScript**
+# Outils utilisés
+React.js  
+Yarn  
+Sass
+
+# Livrables
+Un fichier au format TXT ou PDF comprenant le lien vers votre code sur GitHub contenant l’ensemble du projet, à savoir :  
+le code React de l’application  
+le code React Router pour les routes dans un fichier dédié  
+
+# compétences évaluées
+Configurer la navigation entre les pages de l'application avec React Router  
+Initialiser une application avec Create React App  
+Développer des éléments de l'interface d'un site web grâce à des composants React  
+
+# Lien vers le site
+https://chrbour.github.io/Kasa/
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
