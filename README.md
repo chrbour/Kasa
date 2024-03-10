@@ -9,7 +9,7 @@
 Ce projet 7 de la formation Développeur web d'OpenClassrooms consistait à créer une application web de location immobilière avec React.
 
 # Langages utilisés
-**HTML, CSS, JvaScript**
+**HTML, CSS, JavaScript**
 # Outils utilisés
 React.js  
 Yarn  
