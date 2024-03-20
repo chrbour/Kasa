@@ -20,7 +20,7 @@ Un fichier au format TXT ou PDF comprenant le lien vers votre code sur GitHub co
 le code React de l’application  
 le code React Router pour les routes dans un fichier dédié  
 
-# compétences évaluées
+# Compétences évaluées
 Configurer la navigation entre les pages de l'application avec React Router  
 Initialiser une application avec Create React App  
 Développer des éléments de l'interface d'un site web grâce à des composants React  
